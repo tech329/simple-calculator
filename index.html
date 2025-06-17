@@ -13,43 +13,44 @@
         <div class="calculator">
             <form action="">
                 <div class="display">
-                    <input type="display" placeholder="0">
-                </div>
+                    <input type="text" id="screen" placeholder="0" readonly>
                 <div class="operators">
                     <div class="one">
-                        <button class="element" onclick="">AC</button>
-                        <button class="element" onclick="">C</button>
-                        <button class="element" onclick="">%</button>
-                        <button class="element" onclick="">/</button>
+                        <button type="button" onclick="clearAll()">AC</button>
+                        <button type="button" onclick="clearLast()">C</button>
+                        <button type="button"  class="element" onclick="displayAppend('%')">%</button>
+                        <button type="button"  class="element" onclick="displayAppend('/')">/</button>
                     </div>
                     <div class="two">
-                        <button onclick="">7</button>
-                        <button onclick="">8</button>
-                        <button onclick="">9</button>
-                        <button class="element" onclick="">X</button>
+                        <button type="button"  onclick="displayAppend('7')">7</button>
+                        <button type="button"  onclick="displayAppend('8')">8</button>
+                        <button type="button"  onclick="displayAppend('9')">9</button>
+                        <button type="button"  class="element" onclick="displayAppend('*')">X</button>
                     </div>
                     <div class="three">
-                        <button onclick="">4</button>
-                        <button onclick="">5</button>
-                        <button onclick="">6</button>
-                        <button class="element" onclick="">-</button>
+                        <button type="button"  onclick="displayAppend('4')">4</button>
+                        <button type="button" onclick="displayAppend('5')">5</button>
+                        <button type="button"  onclick="displayAppend('6')">6</button>
+                        <button type="button"  class="element" onclick="displayAppend('-')">-</button>
                     </div>
                     <div class="four">
-                        <button onclick="">1</button>
-                        <button onclick="">2</button>
-                        <button onclick="">3</button>
-                        <button class="element" onclick="">+</button>
+                        <button type="button"  onclick="displayAppend('1')">1</button>
+                        <button type="button"  onclick="displayAppend('2')">2</button>
+                        <button type="button"  onclick="displayAppend('3')">3</button>
+                        <button type="button"  class="element" onclick="displayAppend('+')">+</button>
                     </div>
                     <div class="five">
-                        <button onclick="">.</button>
-                        <button onclick="">0</button>
-                        <button class="equal" onclick="">=</button>
+                        <button type="button"  onclick="displayAppend('.')">.</button>
+                        <button type="button"  onclick="displayAppend('0')">0</button>
+                        <button type="button" class="equal" onclick="calculate()">=</button>
                     </div>
 
                 </div>
         </div>
+        </div>
         </form>
     </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

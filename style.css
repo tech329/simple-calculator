@@ -45,6 +45,7 @@ form{
     color:black;
     height: 60px;
     width: 85px;
+    cursor: pointer;
 }
 button.element{
     background-color: orangered;
