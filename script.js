@@ -1,10 +1,3 @@
-// var displayScreen = document.getElementById("screen");
-
-// function displayAppend(input)
-// {
-//     displayScreen.value += input;
-// }
-
 let displayScreen = document.getElementById("screen");
 
 function displayAppend(input) {
